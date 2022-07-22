@@ -5,19 +5,20 @@
   </div>
   <div>
     <br>
-    <table class="table" *ngIf="show==true">
+    <table class="table">
       <thead>
         <th>Number</th>
         <th>Name</th>
         <th>State</th>
       </thead>
-      <tbody>
+      <tbody *ngIf="show==true">
         <tr *ngFor="let students of studentsList; let i = index">
           <td>{{i + 1}}</td>
           <td>{{students.name}}</td>
           <td>{{students.state}}</td>
         </tr>
       </tbody>
+      <h3 *ngIf="show==false">There is not registry to show!!!</h3>
     </table>
   </div>
 </div>

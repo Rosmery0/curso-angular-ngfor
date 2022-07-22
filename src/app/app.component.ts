@@ -13,7 +13,7 @@ export class AppComponent {
     {name:'Joselyn Estrella', state:'Normal'},
   ]
 
-  show =true;
+  show:boolean=true;
   showDontShow(){
     this.show =! this.show;
   }
