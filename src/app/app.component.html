@@ -11,10 +11,10 @@
         <th>State</th>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Rosmery</td>
-          <td>Aproved</td>
+        <tr *ngFor="let students of studentsList; let i = index">
+          <td>{{i + 1}}</td>
+          <td>{{students.name}}</td>
+          <td>{{students.state}}</td>
         </tr>
       </tbody>
     </table>

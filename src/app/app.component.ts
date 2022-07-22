@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ngForProject';
+  studentsList:any[]=[
+    {name:'Rosmery Rosario', state:'Regular'},
+    {name:'Jennifer Rosario', state:'Approved'},
+    {name:'Luis Daniel Rosario', state:'Repproved'},
+    {name:'Joselyn Estrella', state:'Normal'},
+  ]
 }
