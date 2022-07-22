@@ -12,4 +12,9 @@ export class AppComponent {
     {name:'Luis Daniel Rosario', state:'Repproved'},
     {name:'Joselyn Estrella', state:'Normal'},
   ]
+
+  show =true;
+  showDontShow(){
+    this.show =! this.show;
+  }
 }

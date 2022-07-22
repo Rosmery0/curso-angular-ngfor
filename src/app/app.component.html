@@ -1,10 +1,11 @@
 <div class="container mt-4">
   <div class="row">
     <h1>Students' List</h1>
+    <button class="btn btn-primary col-3" (click)="showDontShow()">Show / Don't Show</button>
   </div>
   <div>
     <br>
-    <table class="table">
+    <table class="table" *ngIf="show==true">
       <thead>
         <th>Number</th>
         <th>Name</th>
